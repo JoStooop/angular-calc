@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {CalcComponent} from './calc-v1/components/calc/calc.component';
+import {CalcComponent} from './calc-v2/components/calc/calc.component';
 
 @Component({
   selector: 'app-root',

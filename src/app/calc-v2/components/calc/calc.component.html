@@ -1,1 +1,16 @@
-<p>calc works 2!</p>
+<div>
+  <input type="number" [(ngModel)]="calcGroup.first.value">
+  <select [(ngModel)]="calcGroup.operation">
+    @for (operation of calcOperations; track operation) {
+      <option [value]="operation">{{ operation }}</option>
+    }
+  </select>
+  <input type="number" [(ngModel)]="calcGroup.second.value">
+</div>
+
+<div>
+  <span>результат: {{ result }}</span>
+</div>
+
+<button (click)="showCalcResult()">Расчитать</button>
+
