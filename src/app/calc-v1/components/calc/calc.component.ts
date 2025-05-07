@@ -39,3 +39,6 @@ export class CalcComponent {
 
 // [value]="first"  - только читать
 // [(ngModel)]="first"  - читать и изменять
+
+// result?: number
+// result: number | undefined = undefined
