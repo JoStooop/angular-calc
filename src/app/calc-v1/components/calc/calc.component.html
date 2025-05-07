@@ -1,0 +1,17 @@
+<div>
+  <input type="number" [(ngModel)]="first">
+  <select [(ngModel)]="selectOperation">
+    @for (operation of operations; track operation) {
+      <option [value]="operation">{{ operation }}</option>
+    }
+  </select>
+  <input type="number" [(ngModel)]="second">
+</div>
+
+<div>
+  <span>результат: {{ result }}</span>
+</div>
+
+<button (click)="showCalcResult()">Расчитать</button>
+
+
